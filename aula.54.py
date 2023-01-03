@@ -1,12 +1,13 @@
 import time
 
-numero_inteiro = input('digite um numero inteiro: ')
-if numero_inteiro.isnumeric():
-    if int(numero_inteiro) % 2 == 0:
-        print(f'O número {numero_inteiro} é par')
+numero = input('digite um numero inteiro: ')
+if numero.isnumeric():
+    numero_inteiro = int(numero)
+    if numero_inteiro % 2 == 0:
+        print(f'O número {numero} é PAR')
     else:
-        print(f'O número {numero_inteiro} é impar')
+        print(f'O número {numero} é IMPAR')
 else:
-    print(f'Você digitou " {numero_inteiro.upper()} " e isso não é valido')
+    print(f'Você digitou " {numero.upper()} " e isso não é valido')
     time.sleep(1)
     print('Por favor digite um numero inteiro'.upper())
